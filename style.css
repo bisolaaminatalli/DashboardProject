@@ -1,0 +1,138 @@
+@font-face {
+  font-family: France;
+  src: url(/france/France.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+section {
+  height: 100vh;
+  display: flex;
+  margin: 0;
+}
+.container-one {
+  background-color: black;
+  height: 100vh;
+  width: 70%;
+  position: relative;
+}
+.dashboardpicture{
+  width: 100%;
+  max-width: 100%;
+  object-fit: contain;
+   height: 100vh;
+   position: relative;
+   overflow: hidden;
+}
+.container-two {
+  height: 100vh;
+  width: 30%;
+}
+.login-container {
+  width: 80%; 
+  margin: 20% auto 20% auto;
+}
+.login-content {
+  margin-top: 30px;
+}
+
+.login-content-one {
+  width: 60%;
+  font-family: France;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 41px;
+  letter-spacing: 0px;
+  text-align: left;
+  
+}
+
+
+.login-content p {
+  margin: 15px 0;
+}
+
+.login-content-two {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.login-details {
+  border: none;
+  margin-top: 25px;
+}
+.login-details input {
+  box-shadow: 0 0px 4px rgba(0, 0, 0, 0.07);
+  width: 90%;
+  padding: 10px 15px;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  margin-top: 20px;
+  font-family: Source Sans Pro;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+input::placeholder {
+  color: black !important;
+}
+.loginPageButton {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  background-color: #13244e;
+  color: white;
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 10px;
+  width: 94%;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: center;
+  cursor: pointer;
+}
+.forgot-password {
+  display: inline-block;
+  margin-top: 18px;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0px;
+  color: blue;
+}
+@media screen and (max-width:500px){
+  section{
+    flex-direction: column;
+  }
+
+.container-one{
+  width: 100%;
+  min-height: 100vh;
+}
+.container-two{
+  width: 100%;
+}
+.login-container{
+  margin: 50% auto 50% auto;
+}
+.container-one {
+  
+  display: none;
+}
+}
